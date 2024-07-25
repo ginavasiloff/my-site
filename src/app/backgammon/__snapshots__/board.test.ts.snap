@@ -1,0 +1,129 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Board > it renders 1`] = `
+<svg
+  data-testid="backgammon-board"
+  viewBox="0 0 100 100"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g>
+    <rect
+      fill="black"
+      height="100"
+      width="100"
+      x="0"
+      y="0"
+    />
+    <rect
+      fill="white"
+      height="98"
+      width="98"
+      x="1"
+      y="1"
+    />
+    <rect
+      fill="black"
+      height="100"
+      width="2"
+      x="49"
+      y="0"
+    />
+  </g>
+  <polygon
+    fill="black"
+    points="51,99, 59,99, 55,59"
+  />
+  <polygon
+    fill="black"
+    points="59,99, 67,99, 63,59"
+  />
+  <polygon
+    fill="black"
+    points="67,99, 75,99, 71,59"
+  />
+  <polygon
+    fill="black"
+    points="75,99, 83,99, 79,59"
+  />
+  <polygon
+    fill="black"
+    points="83,99, 91,99, 87,59"
+  />
+  <polygon
+    fill="black"
+    points="91,99, 99,99, 95,59"
+  />
+  <polygon
+    fill="black"
+    points="1,99, 9,99, 5,59"
+  />
+  <polygon
+    fill="black"
+    points="9,99, 17,99, 13,59"
+  />
+  <polygon
+    fill="black"
+    points="17,99, 25,99, 21,59"
+  />
+  <polygon
+    fill="black"
+    points="25,99, 33,99, 29,59"
+  />
+  <polygon
+    fill="black"
+    points="33,99, 41,99, 37,59"
+  />
+  <polygon
+    fill="black"
+    points="41,99, 49,99, 45,59"
+  />
+  <polygon
+    fill="black"
+    points="1,1, 9,1, 5,39"
+  />
+  <polygon
+    fill="black"
+    points="9,1, 17,1, 13,39"
+  />
+  <polygon
+    fill="black"
+    points="17,1, 25,1, 21,39"
+  />
+  <polygon
+    fill="black"
+    points="25,1, 33,1, 29,39"
+  />
+  <polygon
+    fill="black"
+    points="33,1, 41,1, 37,39"
+  />
+  <polygon
+    fill="black"
+    points="41,1, 49,1, 45,39"
+  />
+  <polygon
+    fill="black"
+    points="51,1, 59,1, 55,39"
+  />
+  <polygon
+    fill="black"
+    points="59,1, 67,1, 63,39"
+  />
+  <polygon
+    fill="black"
+    points="67,1, 75,1, 71,39"
+  />
+  <polygon
+    fill="black"
+    points="75,1, 83,1, 79,39"
+  />
+  <polygon
+    fill="black"
+    points="83,1, 91,1, 87,39"
+  />
+  <polygon
+    fill="black"
+    points="91,1, 99,1, 95,39"
+  />
+</svg>
+`;
