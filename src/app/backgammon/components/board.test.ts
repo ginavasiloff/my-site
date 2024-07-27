@@ -5,15 +5,8 @@ import { Board } from './board'
 
 describe('Board', () => {
   test('it renders', () => {
-    const { getByTestId } = render(
-      Board({
-        trimWidth: 1,
-        width: 100,
-        height: 100,
-        boardColor: 'white',
-        boardTrim: 'black',
-      })
-    )
+    const emptyBoardPositions = { positions: { spaces: {}, bar: {} } }
+    const { getByTestId } = render(Board(emptyBoardPositions))
     expect(getByTestId('backgammon-board').children.length).toBeGreaterThan
     expect(getByTestId('backgammon-board')).toMatchSnapshot()
   })
