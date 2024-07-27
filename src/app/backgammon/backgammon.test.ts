@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest'
 import { canMove, startingPositions, isPlayerHome } from './backgammon'
 
 describe('setupBackgammon', () => {
@@ -6,14 +7,14 @@ describe('setupBackgammon', () => {
     const PLAYER_2 = 'b'
     const positions = {
       spaces: {
-        '1': { player: PLAYER_2, count: 2 },
-        '6': { player: PLAYER_1, count: 5 },
-        '8': { player: PLAYER_1, count: 3 },
-        '12': { player: PLAYER_2, count: 5 },
-        '13': { player: PLAYER_1, count: 5 },
-        '17': { player: PLAYER_2, count: 3 },
-        '19': { player: PLAYER_2, count: 5 },
-        '24': { player: PLAYER_1, count: 2 },
+        '1': { player: PLAYER_1, count: 2 },
+        '6': { player: PLAYER_2, count: 5 },
+        '8': { player: PLAYER_2, count: 3 },
+        '12': { player: PLAYER_1, count: 5 },
+        '13': { player: PLAYER_2, count: 5 },
+        '17': { player: PLAYER_1, count: 3 },
+        '19': { player: PLAYER_1, count: 5 },
+        '24': { player: PLAYER_2, count: 2 },
       },
       bar: {},
     }
@@ -70,7 +71,7 @@ describe('isPlayerHome', () => {
 
 describe('canMove', () => {
   it('returns false if the moving player does not own the pieces in the source position', () => {
-    const moveProps = { player: 'a', from: '1', to: '2' }
+    const moveProps = { player: 'b', from: '1', to: '2' }
     const res = canMove(moveProps, startingPositions)
     expect(res).toBeFalsy()
   })

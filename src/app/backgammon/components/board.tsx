@@ -1,14 +1,22 @@
+import { Coordinates, Positions } from '../types'
 import { Pieces } from './pieces'
-import { Positions } from '../types'
 
-const trimWidth = 1
-const width = 100
-const height = 100
 const boardColor = 'rgb(248, 195, 157)'
 const boardTrim = 'rgb(139, 70, 36)'
-const dx = (width - trimWidth * 4) / 12
 
-const calculateTriangleCoordinates = (): { [key: string]: number[][] } => {
+type BoardDimensions = {
+  width: number
+  height: number
+  trimWidth: number
+  dx: number
+}
+
+const calculateTriangleCoordinates = ({
+  width,
+  height,
+  trimWidth,
+  dx,
+}: BoardDimensions): Coordinates => {
   const y0 = trimWidth
   const y2 = (height - trimWidth * 2) / 2 - height * 0.1
   const y3 = (height - trimWidth * 2) / 2 + height * 0.1
@@ -30,7 +38,7 @@ const calculateTriangleCoordinates = (): { [key: string]: number[][] } => {
         [x4, y4],
         [x5, y3],
       ],
-      [i + 7]: [
+      [12 - i]: [
         [x0, y4],
         [x1, y4],
         [x2, y3],
@@ -50,10 +58,9 @@ const calculateTriangleCoordinates = (): { [key: string]: number[][] } => {
   return triangleCoordinates
 }
 
-const Triangles = () => {
-  const triangleCoordinates = calculateTriangleCoordinates()
-  return Object.keys(triangleCoordinates).map((key, i) => {
-    const points = triangleCoordinates[key]
+const Triangles = ({ coordinates }: { coordinates: Coordinates }) => {
+  return Object.keys(coordinates).map((key, i) => {
+    const points = coordinates[key]
     return (
       <polygon
         data-testid={i}
@@ -66,6 +73,18 @@ const Triangles = () => {
 }
 
 export const Board = ({ positions }: { positions: Positions }) => {
+  const trimWidth = 1
+  const width = 100
+  const height = 100
+  const dx = (width - trimWidth * 4) / 12
+
+  const triangleCoordinates = calculateTriangleCoordinates({
+    width,
+    height,
+    trimWidth,
+    dx,
+  })
+
   return (
     <svg
       viewBox={`0 0 ${width} ${height}`}
@@ -91,8 +110,13 @@ export const Board = ({ positions }: { positions: Positions }) => {
           fill={boardTrim}
         />
       </g>
-      <Triangles />
-      <Pieces positions={positions} />
+      <Triangles coordinates={triangleCoordinates} />
+      <Pieces
+        positions={positions}
+        coordinates={triangleCoordinates}
+        dx={dx}
+        trimWidth={trimWidth}
+      />
     </svg>
   )
 }

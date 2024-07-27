@@ -1,14 +1,11 @@
 import styles from './page.module.css'
-import { Board } from './board'
+import { Board } from './components/board'
+import { startingPositions } from './backgammon'
 export default function Home() {
-    return (
-        <main className={styles.main}>
-            <Board
-                width={100}
-                height={100}
-                boardColor={'rgb(248, 195, 157)'}
-                boardTrim={'rgb(139, 70, 36)'}
-            />
-        </main>
-    )
+  //   const emptyBoardPositions = { spaces: {}, bar: {} }
+  return (
+    <main className={styles.main}>
+      <Board positions={startingPositions} />
+    </main>
+  )
 }

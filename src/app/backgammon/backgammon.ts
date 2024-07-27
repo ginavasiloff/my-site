@@ -5,14 +5,14 @@ export const PLAYER_2 = 'b'
 
 export const startingPositions: Positions = {
   spaces: {
-    '1': { player: PLAYER_2, count: 2 },
-    '6': { player: PLAYER_1, count: 5 },
-    '8': { player: PLAYER_1, count: 3 },
-    '12': { player: PLAYER_2, count: 5 },
-    '13': { player: PLAYER_1, count: 5 },
-    '17': { player: PLAYER_2, count: 3 },
-    '19': { player: PLAYER_2, count: 5 },
-    '24': { player: PLAYER_1, count: 2 },
+    '1': { player: PLAYER_1, count: 2 },
+    '6': { player: PLAYER_2, count: 5 },
+    '8': { player: PLAYER_2, count: 3 },
+    '12': { player: PLAYER_1, count: 5 },
+    '13': { player: PLAYER_2, count: 5 },
+    '17': { player: PLAYER_1, count: 3 },
+    '19': { player: PLAYER_1, count: 5 },
+    '24': { player: PLAYER_2, count: 2 },
   },
   bar: {},
 }
