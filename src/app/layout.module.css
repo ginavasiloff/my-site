@@ -1,0 +1,8 @@
+.body {
+  padding-top: 2rem;
+}
+
+.header {
+  margin: auto;
+  max-width: var(--max-width);
+}
