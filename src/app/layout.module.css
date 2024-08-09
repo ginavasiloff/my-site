@@ -3,6 +3,12 @@
 }
 
 .header {
+  margin-left: 2rem;
   margin: auto;
   max-width: var(--max-width);
+}
+@media (max-width: 1120px) {
+  .header {
+    margin-left: 2rem;
+  }
 }
