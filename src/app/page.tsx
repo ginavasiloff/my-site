@@ -34,7 +34,7 @@ export default function Home() {
         />
         <div className={styles.bio}>
           <div>
-            <h3>About Me</h3>
+            <h2>About Me</h2>
             <p>
               I love to build projects and try out new ideas. This has made
               software engineering a rewarding career for me.
@@ -65,12 +65,25 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.skills}>
-            <h3>Skills</h3>
+            <h2>Skills</h2>
             <ul>
               {skills.map((s, i) => (
                 <li key={`skill-${i}`}>{s}</li>
               ))}
             </ul>
+          </div>
+          <div className={styles.links}>
+            <a href="https://github.com/ginavasiloff">
+              <Image src="/github.svg" alt="github" width={50} height={50} />
+            </a>
+            <a href="https://www.linkedin.com/in/gina-vasiloff-63075390/">
+              <Image
+                src="/linkedin.svg"
+                alt="linkedIn"
+                width={50}
+                height={50}
+              />
+            </a>
           </div>
         </div>
       </section>
