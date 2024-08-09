@@ -41,14 +41,20 @@ export const fetchMovieDetails = async (
   return { id: movieId, releaseDate, title: res.title }
 }
 
+type TMDBCast = {
+  id: string
+  name: string
+  birthday: string
+  profile_id: string
+}
 export const fetchMovieCredits = async (
   movieId: string
 ): Promise<MovieCredits> => {
   const url = `${movieDbApiUrl}/movie/${movieId}/credits`
   const response = await getTMDB(url)
-  const cast: CastMember[] = response.cast.map((c) => {
-    const { id, name, birthday, profie_id } = c
-    return { id, name, birthday, profileId: profie_id }
+  const cast: CastMember[] = response.cast.map((c: TMDBCast) => {
+    const { id, name, birthday, profile_id } = c
+    return { id, name, birthday, profileId: profile_id }
   })
   return { id: movieId, cast }
 }
