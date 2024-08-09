@@ -58,7 +58,7 @@ export default function Home() {
               instrument calibration processes.
             </p>
             <p>
-              I have gone on to focus on web applicatons development and
+              I have gone on to focus on web applications development and
               architecture. My beginning in a scientific environment has led me
               to focus on ensuring a shared understanding of product
               requirements, accuracy, and reliability.
