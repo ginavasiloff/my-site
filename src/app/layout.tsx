@@ -22,7 +22,7 @@ export default function RootLayout({
           <h1>Gina Vasiloff</h1>
           <span>software engineer</span>
         </header>
-        {children}
+        <main className={styles.main}>{children}</main>
       </body>
     </html>
   )
