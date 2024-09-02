@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hello!
 
-## Getting Started
+This is my personal website, built in with Nextjs.
 
-First, run the development server:
+## Working With This Codebase
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### :construction_worker: Development
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`npm run dev` will start this site in development mode on http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`npm run storybook` will start a Storybook instance at http://localhost:6006/
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### :white_check_mark: Testing
 
-## Learn More
+`npm run test` will run all tests. Test files exist alongside the files containing the code being tested.
 
-To learn more about Next.js, take a look at the following resources:
+Tests will automatically run when a commit is made. The tests are not currently run as part of the deployment pipeline. :hushed:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### :link: Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you were able to push to the main branch at https://github.com/ginavasiloff/my-site, the code would be built and deployed to https://www.ginavasiloff.codes/.
