@@ -30,6 +30,7 @@ export default function Home() {
         alt="Gina enjoying the sea spray at Milford Sound"
         width={350}
         height={554}
+        priority
       />
       <div className={styles.bio}>
         <div>
