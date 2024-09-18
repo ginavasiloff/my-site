@@ -78,6 +78,14 @@ export default function Home() {
           <a href="https://www.linkedin.com/in/gina-vasiloff-63075390/">
             <Image src="/linkedin.svg" alt="linkedIn" width={50} height={50} />
           </a>
+          <a href="https://codepen.io/ginavasiloff">
+            <Image
+              src="/codepen-white.png"
+              alt="codepen"
+              width={50}
+              height={50}
+            />
+          </a>
         </div>
       </div>
     </section>
