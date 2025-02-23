@@ -20,10 +20,12 @@ const CatCard = ({ cat }: { cat: Cat }) => {
 
 export default function Page() {
   return (
-    <section className={styles.gallery}>
-      {cats.map((cat, i) => (
-        <CatCard cat={cat} key={i} />
-      ))}
-    </section>
+    <>
+      <section className={styles.gallery}>
+        {cats.map((cat, i) => (
+          <CatCard cat={cat} key={i} />
+        ))}
+      </section>
+    </>
   )
 }

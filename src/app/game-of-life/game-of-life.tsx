@@ -6,6 +6,7 @@ import { Cells, HEIGHT, initializeCells, updateCells, WIDTH } from './game'
 export const GameOfLife = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [initialCells, setInitialCells] = useState(initializeCells())
+  const [shouldRun, setShouldRun] = useState(true)
   const cells = useRef<Cells>()
   const frame = useRef<number>(0)
 
@@ -36,7 +37,7 @@ export const GameOfLife = () => {
       draw()
       cells.current = cells.current ? updateCells(cells.current) : {}
     }
-    window.requestAnimationFrame(generation)
+    shouldRun && window.requestAnimationFrame(generation)
   }
 
   return (

@@ -13,6 +13,10 @@
   margin-top: 1rem;
 }
 
+.buttons button {
+  background-color: lightgreen;
+}
+
 @media (max-width: 500px) {
   .buttons {
     margin: 2rem;
