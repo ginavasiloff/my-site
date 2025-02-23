@@ -1,0 +1,45 @@
+.gallery {
+  display: flex;
+  gap: 2rem;
+}
+
+.catItem {
+  position: relative;
+  overflow: hidden;
+  --frame-corner-margin: -1.5rem;
+}
+
+.frame {
+  border: 1px solid gold;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.corner {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid gold;
+  position: absolute;
+  background-color: black;
+}
+
+.corner:nth-child(1) {
+  top: var(--frame-corner-margin);
+  left: var(--frame-corner-margin);
+}
+.corner:nth-child(2) {
+  top: var(--frame-corner-margin);
+  right: var(--frame-corner-margin);
+}
+.corner:nth-child(3) {
+  bottom: var(--frame-corner-margin);
+  left: var(--frame-corner-margin);
+}
+.corner:nth-child(4) {
+  bottom: var(--frame-corner-margin);
+  right: var(--frame-corner-margin);
+}

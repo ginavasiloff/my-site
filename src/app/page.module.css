@@ -1,14 +1,19 @@
 .home {
-  display: inherit;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
   font-size: 0.85rem;
-  max-width: var(--max-width);
   width: 100%;
-  z-index: 2;
   font-family: var(--font-mono);
 }
+@media (max-width: 700px) {
+  .home {
+    flex-direction: column;
+  }
+}
+
 .home img {
   height: auto;
   max-width: 100%;

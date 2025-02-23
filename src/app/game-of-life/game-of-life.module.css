@@ -1,3 +1,21 @@
+.mainSection {
+  width: 100%;
+  max-width: 500px;
+}
+
 .canvas {
   background-color: powderblue;
+}
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+@media (max-width: 500px) {
+  .buttons {
+    margin: 2rem;
+    gap: 2rem;
+  }
 }
