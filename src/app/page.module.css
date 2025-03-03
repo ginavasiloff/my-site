@@ -17,10 +17,6 @@
   height: auto;
   max-width: 100%;
 }
-.bio {
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border-radius: var(--border-radius);
-}
 
 .bio p,
 .bio ul {

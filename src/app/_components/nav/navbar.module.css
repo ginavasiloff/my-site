@@ -1,0 +1,14 @@
+.navbar > ul {
+  align-items: flex-end;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navbar > ul > li {
+  padding: 1rem;
+}
+
+.navbar > ul > li:hover {
+  color: var(--link-hover-color);
+}

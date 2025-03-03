@@ -3,9 +3,13 @@
 }
 
 .header {
-  margin-left: 2rem;
-  margin: auto;
+  border-bottom: 1px solid var(--bg-accent-subtle);
+  display: flex;
+  justify-content: space-around;
+}
+.headerContents {
   max-width: var(--max-width);
+  width: 100%;
 }
 
 .main {

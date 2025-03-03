@@ -18,7 +18,7 @@ const CatCard = ({ cat }: { cat: Cat }) => {
   )
 }
 
-export default function Page() {
+export default async function Page() {
   return (
     <>
       <section className={styles.gallery}>
