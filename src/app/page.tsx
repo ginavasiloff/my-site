@@ -1,37 +1,19 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
-const skills = [
-  'Typescript',
-  'Docker',
-  'JavaScript',
-  'C#',
-  'Kubernetes',
-  'Unit Testing',
-  'Integration Testing',
-  'Pair Programming',
-  'Node',
-  'React',
-  'RESTful APIs',
-  'Debugging',
-  'Next.js',
-  'Data Visualizations',
-  'CSS',
-  'HTML',
-  'SQL',
-  'git',
-]
-
 export default function Home() {
   return (
     <section className={styles.home}>
-      <Image
-        src="/gina.jpg"
-        alt="Gina enjoying the sea spray at Milford Sound"
-        width={350}
-        height={554}
-        priority
-      />
+      <div className={styles.imageWrap}>
+        <Image
+          src="/gina.jpg"
+          alt="Gina enjoying the sea spray at Milford Sound"
+          width={350}
+          height={554}
+          priority
+          sizes="(max-width: 576px) , (max-width: 1200px) 50vw, 33vw"
+        />
+      </div>
       <div className={styles.bio}>
         <div>
           <h2>About Me</h2>
@@ -63,14 +45,6 @@ export default function Home() {
             focus on ensuring a shared understanding of product requirements,
             accuracy, and reliability.
           </p>
-        </div>
-        <div className={styles.skills}>
-          <h2>Skills</h2>
-          <ul>
-            {skills.map((s, i) => (
-              <li key={`skill-${i}`}>{s}</li>
-            ))}
-          </ul>
         </div>
         <div className={styles.links}>
           <a href="https://github.com/ginavasiloff">

@@ -7,20 +7,21 @@
   display: flex;
   justify-content: space-around;
 }
+
 .headerContents {
   max-width: var(--max-width);
   width: 100%;
 }
 
 .main {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   padding-top: 2rem;
 }
 
-@media (max-width: 1120px) {
+@media (min-width: 1120px) {
   .header {
     margin-left: 2rem;
   }

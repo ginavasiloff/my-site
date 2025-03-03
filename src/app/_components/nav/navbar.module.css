@@ -1,14 +1,47 @@
-.navbar > ul {
-  align-items: flex-end;
+.navbar {
   display: flex;
+  flex-direction: column;
   gap: 2rem;
-  list-style: none;
 }
 
-.navbar > ul > li {
+.home {
+  display: block;
+  margin-left: 2rem;
+  min-width: fit-content;
+}
+
+.navbar > ul {
+  align-items: flex-end;
+  border-bottom: 1px solid var(--bg-accent-subtle);
+  border-top: 1px solid var(--bg-accent-subtle);
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+}
+
+.navbar li {
   padding: 1rem;
 }
 
-.navbar > ul > li:hover {
+.navbar li.active {
+  color: var(--accent);
+}
+
+.navbar li:hover {
   color: var(--link-hover-color);
+}
+
+@media (width >= 576px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: none;
+    padding: 1rem;
+  }
+  .navbar > ul {
+    border: none;
+    justify-content: flex-end;
+  }
 }
