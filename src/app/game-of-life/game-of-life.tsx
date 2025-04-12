@@ -7,7 +7,7 @@ export const GameOfLife = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [initialCells, setInitialCells] = useState(initializeCells())
   const [shouldRun, setShouldRun] = useState(true)
-  const cells = useRef<Cells>()
+  const cells = useRef<Cells>(undefined)
   const frame = useRef<number>(0)
 
   useEffect(() => {
