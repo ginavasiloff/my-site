@@ -22,6 +22,14 @@ export default async function Page() {
   return (
     <>
       <section className={styles.gallery}>
+        <p>
+          Note: However pleasant these cats are, cats should be kept indoors.
+          Outdoor cats are harmful to small animals and are more at risk for
+          injury and disease. Please keep your cats inside.{' '}
+          <a href="https://www.humaneworld.org/en/resources/10-tips-keep-your-cat-happy-and-entertained-indoors">
+            Here are 10 tips for keeping your cat happy indoors.
+          </a>
+        </p>
         {cats.map((cat, i) => (
           <CatCard cat={cat} key={i} />
         ))}
