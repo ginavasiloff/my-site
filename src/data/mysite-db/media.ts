@@ -1,4 +1,4 @@
-import { query } from '@/data/query'
+import { query } from '@/data/mysite-db/query'
 import { neon } from '@neondatabase/serverless'
 
 type MediaType = ''

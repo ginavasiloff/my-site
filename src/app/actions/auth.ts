@@ -1,5 +1,5 @@
 'use server'
-import { getUserByUsername } from '@/repository/user'
+import { getUserByUsername } from '@/data/mysite-db/user'
 
 import { comparePassword } from '@/app/lib/password'
 import { createSession, deleteSession } from '../lib/session'
