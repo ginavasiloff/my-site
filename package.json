@@ -10,27 +10,18 @@
     "lint": "next lint",
     "test": "vitest run",
     "test:watch": "vitest watch",
-    "prepare": "husky",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "prepare": "husky"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.1",
     "fs": "^0.0.1-security",
     "jose": "^6.0.12",
-    "next": "15.5.5",
+    "next": "^16.0.7",
     "postgres": "^3.4.7",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "@chromatic-com/storybook": "^3.2.5",
-    "@storybook/addon-essentials": "^8.6.12",
-    "@storybook/addon-onboarding": "^8.6.12",
-    "@storybook/blocks": "^8.6.12",
-    "@storybook/nextjs": "^8.6.12",
-    "@storybook/react": "^8.6.12",
-    "@storybook/test": "^8.6.12",
     "@testing-library/jest-dom": "^6.4.8",
     "@testing-library/react": "^16.0.0",
     "@types/node": "^20",
@@ -44,7 +35,6 @@
     "husky": "^9.1.4",
     "jsdom": "^24.1.1",
     "prisma": "^6.6.0",
-    "storybook": "^8.6.12",
     "tsx": "^4.19.3",
     "typescript": "^5",
     "vitest": "^3.2.4"
